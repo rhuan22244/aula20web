@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funçoes</title>
+</head>
+<body onload="alo()">
+    <h1>eventos e funções</h1>
+
+
+    <button onclick="alo()">alo</button>
+    <br><br>
+    <button onclick="olanome('rhuan')">ola nome</button>
+    <br><br>
+
+    <form>
+        <label for="nome">nome</label>
+        <input type="text" id="nome" onchange="textoMudou()"> 
+        <button onclick="saudacao()" type="button">Saudação</button>
+    </form>
+
+    <span onmouseover="mouseCima()">clique aqui</span>
+    <span onmouseout="mouseSaiu()">clique aqui</span>
+
+    <form>
+        <label for="user">usuario</label>
+        <input type="text" id="user" onfocus="emFoco()" onblur="semFoco()">
+    </form>
+
+
+
+    <script src="funçoes.js"></script>
+</body>
+</html>
